@@ -16,7 +16,6 @@
 
 table, th, tr {
     border: 1px solid black;
-    border-collapse: collapse;
 }
 
 th {
@@ -27,4 +26,8 @@ th {
 tr {
     text-align: left;
     width: 75px;
+}
+
+th, tr {
+    border-collapse: collapse;
 }
