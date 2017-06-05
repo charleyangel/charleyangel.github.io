@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Shopping Planner Project</title>
+    <script src="src/model/Shopping.js"></script>
+</head>
+<body>
+    <h1>My Food List</h1>
+    <h2>A list of all food I buy</h2>
+    <p>This app supports the following operations</p>
+    <menu>
+        <li><a href="listFood.html"><button type="button">List all food items</button></a></li>
+        <li><a href="createFood.html"><button type="button">Add a new food item</button></a></li>
+        <li><a href="updateFood.html"><button type="button">Update a food item</button></a></li>
+        <li><a href="deleteFood.html"><button type="button">Delete a food item</button></a></li>
+        <li><button type="button" onclick="Food.clearData()">Clear database</button></li>
+        <li><button type="button" onclick="Food.createTestData()">Create test data</button></li>
+    </menu>
+    <p>Clear database should be used sparingly</p>
+</body>
+</html>

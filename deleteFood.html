@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Delete a food item</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Shopping.js"></script>
+    <script src="src/view/deleteFood.js"></script>
+    <script>
+        window.addEventListener("load", sp.view.deleteFood.setupUserInterface);
+    </script>
+</head>
+<body>
+    <h1>Shopping Planner : Delete a food item</h1>
+    <form id="Food">
+        <p>
+            <label>
+                Select food item:
+                <select name="selectFood"><option value=""> --- </option></select>
+            </label>
+        </p>
+        <p><button type="button" name="commit">Delete</button></p>
+    </form>
+    <nav><a href="index.html">Back to main menu</a></nav>
+</body>
+</html>

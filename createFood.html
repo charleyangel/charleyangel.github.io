@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Create a new food item</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Shopping.js"></script>
+    <script src="src/view/createFood.js"></script>
+    <script>
+        window.addEventListener("load", sp.view.createFood.setupUserInterface);
+    </script>
+</head>
+<body>
+    <h1>Shopping Planner : Create a new food item</h1>
+    <form id="Food">
+        <p><label>Type: <input name="type" /></label></p>
+        <p><label>Food Name: <input name="foodname" /></label></p>
+        <p><label>Quantity: <input name="quantity" /></label></p>
+        <p><label>Unit: <input name="unit" /></label></p>
+        <p><label>Price: <input name="price" /></label></p>
+        <p><label>Supermarket: <input name="supermarket" /></label></p>
+        <p><button type="button" name="commit">Save</button></p>
+    </form>
+    <nav><a href="index.html">Back to main menu</a></nav>
+</body>
+</html>
