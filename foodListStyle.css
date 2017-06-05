@@ -27,7 +27,11 @@ th {
 
 tr {
     text-align: left;
-    width: 75px;
+    width: 100%;
+}
+
+tc {
+    width: 200px;
 }
 
 table {
