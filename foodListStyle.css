@@ -28,6 +28,6 @@ tr {
     width: 75px;
 }
 
-th, tr {
+table {
     border-collapse: collapse;
 }
