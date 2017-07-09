@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type, health) {
+            this.my_name = name;
+            this.my_type = type;
+            this.my_health = health;
+        };
+
+        var Elenia = new Hero('Elenia','the warrior', 20);
+
+        var Inventory = function (weapon, item) {
+            this.my_weapon = weapon;
+            this.my_item = item;
+        };
+
+        var EleniaInventory = new Inventory('dagger', 'map');
+
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+        console.log("Elenia has ", Elenia.my_health, " HP remaining");
+        console.log("Inventory list -");
+        console.log(EleniaInventory.my_weapon);
+        console.log(EleniaInventory.my_item);
+
+    </script>
+</head>
+<body>
+    Upon leaving the room you are attacked by a man.<br/><br/>
+
+    <a href="3_1page.html">Try to stab him with the dagger</a><br/><br/>
+    <a href="3_2page.html">Try to punch him</a><br/><br/>
+    <a href="3_3page.html">Run away down the corridor</a>
+
+</body>
+</html>

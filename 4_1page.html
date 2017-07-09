@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type, health) {
+            this.my_name = name;
+            this.my_type = type;
+            this.my_health = health;
+        };
+
+        var Elenia = new Hero('Elenia', 'the warrior', 20);
+
+        var Enemy = function (enemyName, health, damage) {
+            this.my_enemyName = enemyName;
+            this.my_health = health;
+            this.my_damage = damage;
+        }
+
+        var Badger = new Enemy('Badger', 6, 3);
+
+        var Inventory = function (weapon, item) {
+            this.my_weapon = weapon;
+            this.my_item = item;
+        };
+
+        var EleniaInventory = new Inventory('dagger', 'map');
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+        console.log("Elenia has ", Elenia.my_health - Badger.my_damage, " HP remaining");
+        console.log("Inventory list -")
+        console.log(EleniaInventory.my_weapon);
+        console.log(EleniaInventory.my_item);
+        console.log("You are fighting");
+        console.log(Badger.my_enemyName);
+        console.log("Badger has ", Badger.my_health," HP remaining ");
+
+    </script>
+</head>
+<body>
+    He blocks your stab and punches you in the stomach. <br /><br />
+
+    <a href="5_1page.html">Go for his face with the dagger</a><br /><br />
+    <a href="5_2page.html">Try and get behind him</a><br /><br />
+    <a href="5_3page.html">Run away down the corridor</a>
+
+</body>
+</html>

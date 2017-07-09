@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type) {
+            this.my_name = name;
+            this.my_type = type;
+        }; 
+
+        var Elenia = new Hero('Elenia','the warrior');
+
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+    </script>
+</head>
+<body>
+    Welcome <script>document.write(Elenia.my_name)</script> <script>document.write(Elenia.my_type)</script><br/><br/>.
+    You are in a room. What would you like to do?<br/><br />
+    <a href="1_1page.html">Look around the room</a><br/><br/>
+    <a href="1_2page.html">Go through the door</a>
+</body>
+</html>
