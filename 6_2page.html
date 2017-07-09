@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type, health, damage) {
+            this.my_name = name;
+            this.my_type = type;
+            this.my_health = health;
+            this.my_damage = damage;
+        };
+
+        var Elenia = new Hero('Elenia', 'the warrior', 17, 7);
+
+        var Enemy = function (enemyName, health, damage) {
+            this.my_enemyName = enemyName;
+            this.my_health = health;
+            this.my_damage = damage;
+        }
+
+        var Badger = new Enemy('Badger', 6, 3);
+
+        var Inventory = function (weapon, item, gold) {
+            this.my_weapon = weapon;
+            this.my_item = item;
+            this.my_gold = gold;
+        };
+
+        var EleniaInventory = new Inventory('dagger', 'map', 0);
+
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+        console.log("Elenia has ", Elenia.my_health, " HP remaining");
+        console.log("Inventory list -")
+        console.log(EleniaInventory.my_weapon);
+        console.log(EleniaInventory.my_item);
+
+    </script>
+</head>
+<body>
+    You have reached the end of this prototype, if you have any comments please send them to lydiargray@yahoo.com
+
+    <h3>Thank you for playing!</h3>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type, health) {
+            this.my_name = name;
+            this.my_type = type;
+            this.my_health = health;
+        };
+
+        var Elenia = new Hero('Elenia','the warrior',20);
+
+        var Inventory = function (weapon, item) {
+            this.my_weapon = weapon;
+            this.my_item = item;
+        };
+
+        var EleniaInventory = new Inventory();
+
+        var damage = 3
+
+        var Enemy = function (enemyName, health, damage) {
+            this.my_enemyName = enemyName;
+            this.my_health = health;
+            this.my_damage = damage;
+        }
+
+        var Badger = new Enemy('Badger', 10, 3);
+
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+        console.log("Elenia has ", Elenia.my_health, " HP remaining");
+        console.log("Inventory list -")
+        console.log(EleniaInventory.my_weapon);
+        console.log(EleniaInventory.my_item);
+        console.log("You are fighting");
+        console.log(Badger.my_enemyName);
+        console.log("Badger has ", Badger.my_health - damage," HP remaining ");
+
+    </script>
+</head>
+<body>
+    You give him a solid punch to the side of his face, but he seems unphased by it.<br /><br />
+
+    <a href="3_4page.html">Punch his face again</a><br /><br />
+    <a href="3_5page.html">Punch him in the stomach</a>
+
+</body>
+</html>

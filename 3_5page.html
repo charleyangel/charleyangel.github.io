@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dungeon Game</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="DungeonStyle.css" />
+    <script type="text/javascript">
+        var Hero = function (name, type, health) {
+            this.my_name = name;
+            this.my_type = type;
+            this.my_health = health;
+        };
+
+        var Elenia = new Hero('Elenia','the warrior',20);
+
+        var Inventory = function (weapon, item) {
+            this.my_weapon = weapon;
+            this.my_item = item;
+        };
+
+        var EleniaInventory = new Inventory();
+
+        var damage = 6
+
+        var Enemy = function (enemyName, health, damage) {
+            this.my_enemyName = enemyName;
+            this.my_health = health;
+            this.my_damage = damage;
+        }
+
+        var Badger = new Enemy('Badger', 7, 3);
+
+        console.log(Elenia.my_name);
+        console.log(Elenia.my_type);
+        console.log("Elenia has ", Elenia.my_health - Badger.my_damage, " HP remaining");
+        console.log("Inventory list -")
+        console.log(EleniaInventory.my_weapon);
+        console.log(EleniaInventory.my_item);
+        console.log("You are fighting");
+        console.log(Badger.my_enemyName);
+        console.log("Badger has ", Badger.my_health - damage," HP remaining");
+
+    </script>
+</head>
+<body>
+    You're able to give him a solid clout to his stomach, but he then brings his fist down on your shoulder. One more hit should do it!<br /><br />
+
+    <a href="5_5page.html">One more punch to the stomach</a><br /><br />
+
+</body>
+</html>
